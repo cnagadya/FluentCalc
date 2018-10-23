@@ -1,4 +1,4 @@
-git initconst numbers = {
+const numbers = {
   one: 1,
   two: 2,
   three: 3,
@@ -66,14 +66,15 @@ calcHandler = {
 };
 const Calc = new Proxy({}, calcHandler);
 
+module.exports = Calc
 console.log(Calc.new.two.plus.one);
-console.log(Calc.new.two.plus.two);
-console.log(Calc.new.two.minus.one);
-console.log(Calc.new.one.plus.two);
-console.log(Calc.new.five.minus.six);
-console.log(Calc.new.seven.times.two);
-console.log(Calc.new.nine.divided_by.three);
-console.log(Calc.new.nine.divided_by.zero);
+// console.log(Calc.new.two.plus.two);
+// console.log(Calc.new.two.minus.one);
+// console.log(Calc.new.one.plus.two);
+// console.log(Calc.new.five.minus.six);
+// console.log(Calc.new.seven.times.two);
+// console.log(Calc.new.nine.divided_by.three);
+// console.log(Calc.new.nine.divided_by.zero);
 
-//Invalids
-console.log(Calc.new.one.divided_by.ten);
+// //Invalids
+// console.log(Calc.new.one.divided_by.ten);
